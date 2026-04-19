@@ -1,0 +1,6 @@
+Model classes should be:
+- Annotated with @Document (for MongoDB)
+- Have @Id for primary key
+- Use @Field to customize field names if needed
+- Have @Indexed on fields you'll query often (email, qrCodeHash, etc.)
+- Use Lombok @Data, @Builder for less boilerplate (or write getters/setters yourself)
